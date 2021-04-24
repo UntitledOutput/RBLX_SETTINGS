@@ -1,0 +1,381 @@
+{
+   "project": {
+      "app": [
+         {
+            "_title": "Friday Night Funkin'",
+            "_file": "Funkin",
+            "_packageName": "com.ninjamuffin99.funkin",
+            "_package": "com.ninjamuffin99.funkin",
+            "_main": "Main",
+            "_version": "0.2.7.1",
+            "_company": "ninjamuffin99"
+         },
+         {
+            "_preloader": "flixel.system.FlxPreloader"
+         }
+      ],
+      "set": [
+         {
+            "_name": "APP_ID",
+            "_value": "0x0100f6c013bbc000"
+         },
+         {
+            "_name": "SWF_VERSION",
+            "_value": "11.8"
+         },
+         {
+            "_name": "BUILD_DIR",
+            "_value": "export/debug",
+            "_if": "debug"
+         },
+         {
+            "_name": "BUILD_DIR",
+            "_value": "export/release",
+            "_unless": "debug"
+         },
+         {
+            "_name": "BUILD_DIR",
+            "_value": "export/32bit",
+            "_if": "32bit"
+         }
+      ],
+      "window": [
+         {
+            "_width": "1280",
+            "_height": "720",
+            "_fps": "",
+            "_background": "#000000",
+            "_hardware": "true",
+            "_vsync": "false"
+         },
+         {
+            "_if": "html5",
+            "_resizable": "true"
+         },
+         {
+            "_if": "desktop",
+            "_orientation": "landscape",
+            "_fullscreen": "false",
+            "_resizable": "true",
+            "_vsync": "false"
+         },
+         {
+            "_if": "mobile",
+            "_orientation": "landscape",
+            "_fullscreen": "true",
+            "_width": "0",
+            "_height": "0",
+            "_resizable": "false"
+         },
+         {
+            "_if": "switch",
+            "_orientation": "landscape",
+            "_fullscreen": "true",
+            "_width": "0",
+            "_height": "0",
+            "_resizable": "true"
+         }
+      ],
+      "classpath": {
+         "_name": "source"
+      },
+      "assets": [
+         {
+            "_path": "assets/preload",
+            "_rename": "assets",
+            "_exclude": "*.ogg",
+            "_if": "web"
+         },
+         {
+            "_path": "assets/preload",
+            "_rename": "assets",
+            "_exclude": "*.mp3",
+            "_unless": "web"
+         },
+         {
+            "_path": "assets/songs",
+            "_library": "songs",
+            "_exclude": "*.ogg",
+            "_if": "web"
+         },
+         {
+            "_path": "assets/songs",
+            "_library": "songs",
+            "_exclude": "*.mp3",
+            "_unless": "web"
+         },
+         {
+            "_path": "assets/shared",
+            "_library": "shared",
+            "_exclude": "*.ogg",
+            "_if": "web"
+         },
+         {
+            "_path": "assets/shared",
+            "_library": "shared",
+            "_exclude": "*.mp3",
+            "_unless": "web"
+         },
+         {
+            "_path": "assets/tutorial",
+            "_library": "tutorial",
+            "_exclude": "*.ogg",
+            "_if": "web"
+         },
+         {
+            "_path": "assets/tutorial",
+            "_library": "tutorial",
+            "_exclude": "*.mp3",
+            "_unless": "web"
+         },
+         {
+            "_path": "assets/week1",
+            "_library": "week1",
+            "_exclude": "*.ogg",
+            "_if": "web"
+         },
+         {
+            "_path": "assets/week1",
+            "_library": "week1",
+            "_exclude": "*.mp3",
+            "_unless": "web"
+         },
+         {
+            "_path": "assets/week2",
+            "_library": "week2",
+            "_exclude": "*.ogg",
+            "_if": "web"
+         },
+         {
+            "_path": "assets/week2",
+            "_library": "week2",
+            "_exclude": "*.mp3",
+            "_unless": "web"
+         },
+         {
+            "_path": "assets/week3",
+            "_library": "week3",
+            "_exclude": "*.ogg",
+            "_if": "web"
+         },
+         {
+            "_path": "assets/week3",
+            "_library": "week3",
+            "_exclude": "*.mp3",
+            "_unless": "web"
+         },
+         {
+            "_path": "assets/week4",
+            "_library": "week4",
+            "_exclude": "*.ogg",
+            "_if": "web"
+         },
+         {
+            "_path": "assets/week4",
+            "_library": "week4",
+            "_exclude": "*.mp3",
+            "_unless": "web"
+         },
+         {
+            "_path": "assets/week5",
+            "_library": "week5",
+            "_exclude": "*.ogg",
+            "_if": "web"
+         },
+         {
+            "_path": "assets/week5",
+            "_library": "week5",
+            "_exclude": "*.mp3",
+            "_unless": "web"
+         },
+         {
+            "_path": "assets/week6",
+            "_library": "week6",
+            "_exclude": "*.ogg",
+            "_if": "web"
+         },
+         {
+            "_path": "assets/week6",
+            "_library": "week6",
+            "_exclude": "*.mp3",
+            "_unless": "web"
+         },
+         {
+            "_path": "example_mods",
+            "_rename": "mods",
+            "_embed": "false"
+         },
+         {
+            "_path": "art/readme.txt",
+            "_rename": "do NOT readme.txt"
+         },
+         {
+            "_path": "CHANGELOG.md",
+            "_rename": "changelog.txt"
+         },
+         {
+            "_path": "assets/fonts",
+            "_embed": "true"
+         }
+      ],
+      "define": [
+         {
+            "_name": "PRELOAD_ALL",
+            "_unless": "web"
+         },
+         {
+            "_name": "NO_PRELOAD_ALL",
+            "_unless": "PRELOAD_ALL"
+         }
+      ],
+      "section": [
+         {
+            "library": [
+               {
+                  "_name": "songs",
+                  "_preload": "true"
+               },
+               {
+                  "_name": "shared",
+                  "_preload": "true"
+               },
+               {
+                  "_name": "tutorial",
+                  "_preload": "true"
+               },
+               {
+                  "_name": "week1",
+                  "_preload": "true"
+               },
+               {
+                  "_name": "week2",
+                  "_preload": "true"
+               },
+               {
+                  "_name": "week3",
+                  "_preload": "true"
+               },
+               {
+                  "_name": "week4",
+                  "_preload": "true"
+               },
+               {
+                  "_name": "week5",
+                  "_preload": "true"
+               },
+               {
+                  "_name": "week6",
+                  "_preload": "true"
+               }
+            ],
+            "_if": "PRELOAD_ALL"
+         },
+         {
+            "library": [
+               {
+                  "_name": "songs",
+                  "_preload": "false"
+               },
+               {
+                  "_name": "shared",
+                  "_preload": "false"
+               },
+               {
+                  "_name": "tutorial",
+                  "_preload": "false"
+               },
+               {
+                  "_name": "week1",
+                  "_preload": "false"
+               },
+               {
+                  "_name": "week2",
+                  "_preload": "false"
+               },
+               {
+                  "_name": "week3",
+                  "_preload": "false"
+               },
+               {
+                  "_name": "week4",
+                  "_preload": "false"
+               },
+               {
+                  "_name": "week5",
+                  "_preload": "false"
+               },
+               {
+                  "_name": "week6",
+                  "_preload": "false"
+               }
+            ],
+            "_if": "NO_PRELOAD_ALL"
+         }
+      ],
+      "haxelib": [
+         {
+            "_name": "flixel"
+         },
+         {
+            "_name": "flixel-addons"
+         },
+         {
+            "_name": "hscript"
+         },
+         {
+            "_name": "flixel-ui"
+         },
+         {
+            "_name": "newgrounds"
+         },
+         {
+            "_name": "faxe",
+            "_if": "switch"
+         },
+         {
+            "_name": "polymod"
+         },
+         {
+            "_name": "discord_rpc",
+            "_if": "desktop"
+         }
+      ],
+      "haxedev": {
+         "_set": "webgl"
+      },
+      "haxedef": [
+         {
+            "_name": "FLX_NO_FOCUS_LOST_SCREEN"
+         },
+         {
+            "_name": "FLX_NO_DEBUG",
+            "_unless": "debug"
+         },
+         {
+            "_name": "NAPE_RELEASE_BUILD",
+            "_unless": "debug"
+         },
+         {
+            "_name": "NG_LOGIN",
+            "_if": "newgrounds"
+         }
+      ],
+      "icon": [
+         {
+            "_path": "art/icon16.png",
+            "_size": "16"
+         },
+         {
+            "_path": "art/icon32.png",
+            "_size": "32"
+         },
+         {
+            "_path": "art/icon64.png",
+            "_size": "64"
+         },
+         {
+            "_path": "art/iconOG.png"
+         }
+      ]
+   }
+}
